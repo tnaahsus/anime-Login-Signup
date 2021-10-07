@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/signUp.css">
+    <title>Senpai Gen</title>
+</head>
+
+<body>
+    <form class="signupPage needs-validation" novalidate onsubmit="return validation()" autocomplete="off">
+        <h1 class="ml1 text-center fw-normal font-monospace ">
+            <span class="text-wrapper text-center">
+                <span class="letters text-light text-center">Senpai Gen</span>
+            </span>
+        </h1>
+        <hr class="bg-light">
+        <h1 class="h4 mb-3 fw-normal text-center text-light"> Please Signup</h1>
+        <div class="form-floating mb-2 input-group has-validation">
+            <input type="text" class="form-control bg-transparent bg-gradient text-light " id="floatingNickName" name="nickname"
+                placeholder="Nickname" required autocomplete="off" >
+            <label for="floatingNickName" class="text-light">Nickname</label>
+            
+            <div class="invalid-feedback">
+                Please enter a Nickname.
+              </div>
+        </div>
+
+        <div class="form-floating mb-2 input-group has-validation">
+            <input type="email" class="form-control bg-transparent bg-gradient text-light" id="floatingEmail"
+                placeholder="text@example.com" name="email" required autocomplete="off">
+            <label for="floatingEmail" class="text-light">Email Id</label>
+            
+            <div class="invalid-feedback">
+                Please enter a Email Id.
+              </div>
+        </div>
+        <div class="form-floating mb-2 bg-gradient has-validation">
+            <select class="form-select mb-2 bg-transparent text-light " aria-label="Default select example"
+                id="collegeList" required >
+                <option selected disabled value=""></option>
+                <option hidden>...</option>
+            </select>
+            <label for="collegeList" class="text-light">College Name</label>
+            <div class="invalid-feedback">
+                Please select a college.
+              </div>
+        </div>
+        <div class="input-group mb-2 has-validation">
+            <label class="input-group-text bg-transparent bg-gradient text-light " for="inputFile">I'd Proof</label>
+            <input type="file" class="form-control bg-dark text-light ms-2" id="inputFile" required>
+            <div class="invalid-feedback">
+                Please choose a file.
+              </div>
+
+        </div>
+
+        <div class="form-floating mb-2 has-validation">
+            <input type="password" class="form-control bg-transparent bg-gradient text-light" id="floatingPassword"
+                placeholder="Password" name="password" onkeyup='check()' required autocomplete="off">
+            <label for="floatingPassword" class="text-light">Password</label>
+            <div class="invalid-feedback">
+                Please enter Password.
+              </div>
+        </div>
+
+        <div class="form-floating mb-2 has-validation">
+            <input type="password" class="form-control bg-transparent bg-gradient text-light"
+                id="floatingConfirmPassword" placeholder="Confirm Password" name="confirmpassword" onkeyup='check()' required autocomplete="off">
+            <label for="floatingConfirmPassword" class="text-light">Confirm Password</label>
+            <span id="message"></span>
+            <div class="invalid-feedback">
+                Please enter Confirm Password.
+              </div>
+        </div>
+        <div class="form-check mb-2 has-validation">
+          <input class="form-check-input" type="checkbox" id="gridCheck" required>
+          <label class="form-check-label text-light" for="gridCheck">
+            I agree with the privacy policy*
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+        <div class="col-md-12 mt-2 text-center">
+            <button class=" btn btn-lg btn-outline-secondary mt-2 py-2 w-25text-light"  type="submit">Sign up</button>       
+        </div>
+        
+          
+    </form>
+
+
+
+</body>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="js/signUp.js"></script>
+<script src="js/collegelist.js"></script>
+<
+</html>
